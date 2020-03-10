@@ -1,3 +1,5 @@
+__coder__ = "KhodeXenon"
+__my_email__ = "KhodeXenon@gmail.com"
 def TextReplace(file_name) :
     '''a function for replacing a word in a text file'''
 
