@@ -1,5 +1,7 @@
 __coder__ = "KhodeXenon"
 __my_email__ = "KhodeXenon@gmail.com"
+import re
+
 def TextReplace(file_name) :
     '''a function for replacing a word in a text file'''
 
@@ -25,11 +27,11 @@ def TextReplace(file_name) :
             replace_to = input("Replace to which word :")
     # get inputs from the user about words
     # create a new file with new name and new replaced content
-            new_text = processing_text.replace(wanna_find_word , replace_to)
+            new_text = re.sub(wanna_find_word,replace_to, processing_text)
             new_file_name = "newReplaced_" + file_name
             with open(new_file_name, "w") as new_overal_text_file :
                 new_overal_text_file.write(new_text)
-            open_or_not = input("Do yo want to open the new text file ? (y) :")
+            open_or_not = input("Do yo want to open the new text file ? (y) :").lower()
             if open_or_not == "y" or open_or_not == "yes" :
                 import os
                 os.system("start " + new_file_name)
