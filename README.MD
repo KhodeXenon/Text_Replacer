@@ -3,7 +3,7 @@ It replaces a words in a `.txt` file .
 
 ## Note
 - The new file name after creation is `new_Replaced_`filename.txt
-- It doesn't concern about `capitalization` of the word .
+- This program is `case intensive`
 - hello = Hello = HELLO
 
 ## Screenshots
